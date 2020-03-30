@@ -5,15 +5,15 @@ using namespace std;
 int main() {
     freopen("in.txt", "r", stdin);
     vector<int> cost, wt;
-    int w = 5, n;
-    cin >> n;
-    int a[n];
-    for (int t=0;t<n;++t) cin >> a[t];
+    int w, n;
+    cin >> n >> w;
+    int a[n], ww[n];
+    for (int t=0;t<n;++t) cin >> ww[t] >> a[t];
 
     for (int t=0;t<n;++t) {
         if (a[t] != -1) {
            cost.push_back(a[t]);
-           wt.push_back(t+1); 
+           wt.push_back(ww[t]); 
         }
     }
 
